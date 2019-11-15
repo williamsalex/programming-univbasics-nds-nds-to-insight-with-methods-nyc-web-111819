@@ -17,7 +17,7 @@ def gross_for_director(director_data)
   total_gross
 end
 
-def gross_for_director(name, director_data)
+def gross_for_director(director_data)
   hash = {}
   for x in directors_database
     total_gross = 0
@@ -26,7 +26,7 @@ def gross_for_director(name, director_data)
     end
     hash[x[:name]] = total_gross
   end
-  hash[name]
+  hash
 end
 
 def directors_totals(nds)
