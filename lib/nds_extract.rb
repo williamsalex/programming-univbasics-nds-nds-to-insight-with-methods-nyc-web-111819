@@ -40,7 +40,7 @@ end
 def directors_totals(nds)
   hash = {}
   for x in nds do
-    name = nds[x][:name]
+    name = nds[x]
     hash[name] = gross_for_director(x)
   end
   hash
