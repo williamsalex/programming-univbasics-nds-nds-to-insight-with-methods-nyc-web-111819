@@ -19,7 +19,7 @@ end
 
 def gross_for_director(director_data)
   hash = {}
-  for x in director_data
+  for x in director_data[:movies]
     total_gross = 0
     for y in x[:movies]
       total_gross = total_gross + y[:worldwide_gross]
