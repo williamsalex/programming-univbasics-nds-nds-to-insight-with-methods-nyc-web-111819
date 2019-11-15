@@ -5,6 +5,13 @@ require 'directors_database'
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 
+
+# Find a way to accumulate the :worldwide_grosses and return that Integer
+# using director_data as input
+def gross_for_director(director_data)
+  directors_database
+end
+
 def directors_totals(nds)
   hash = {}
   for x in directors_database
@@ -16,11 +23,3 @@ def directors_totals(nds)
   end
   hash
 end
-
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
-def gross_for_director(director_data)
-  totals = directors_totals(director_data)
-  
-end
-
