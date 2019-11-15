@@ -39,5 +39,9 @@ def directors_totals(nds)
 end
 
 def directors_totals(nds)
-  gross_for_director(nds)
+  hash = {}
+  for x in nds do
+    gross_for_director(x)
+  end
+  
 end
