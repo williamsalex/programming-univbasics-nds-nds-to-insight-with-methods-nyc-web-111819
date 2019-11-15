@@ -18,12 +18,11 @@ require 'directors_database'
 #end
 
 def gross_for_director(director_data)
-  hash = {}
   total_gross = 0
   for x in director_data[:movies]
     total_gross = total_gross + x[:worldwide_gross]
   end
-  hash
+  total_gross
 end
 
 def directors_totals(nds)
