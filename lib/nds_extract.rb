@@ -10,7 +10,11 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director)
   directorNest = directors_database[director]
-  
+  total_gross = 0 
+  for y in directorNest[:movies] do
+    total_gross = total_gross + y[:worldwide_gross]
+  end
+  total_gross
 end
 
 def directors_totals(nds)
